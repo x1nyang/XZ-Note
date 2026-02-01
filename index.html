@@ -305,7 +305,8 @@
     <header>
         <nav>
             <div class="logo">
-                🌿 <span>BioGuard</span>
+                <img src="images/logo.jpg" style="width: 3rem;height: 3rem" alt="logo">
+                <span>秀钟笔记-云野仙踪</span>
             </div>
             <div class="nav-links">
                 <a href="#home">首页</a>
@@ -320,7 +321,8 @@
     <div id="home" class="hero">
         <div class="hero-content">
             <h1>探索自然，守护多样性</h1>
-            <p>我们是“可持续·未来”秀钟书院赴云南昆明和西双版纳支队实践团队，致力于记录和保护云南的本土珍稀植物资源。</p>
+            <p>我们是“可持续·未来”秀钟书院赴云南昆明和西双版纳支队实践支队，致力于通过跨学科视角与田野研究方法，探索融合地方传统生态智慧与现代绿色技术的保护新路径，为生物多样性治理与区域可持续发展贡献青年思考与实践。
+            </p>
             <a href="#plants" class="btn">查看成果</a>
         </div>
     </div>
@@ -336,8 +338,9 @@
             </div>
             <div class="team-text">
                 <h3>行在山野，志在保护</h3>
-                <p>“可持续·未来”秀钟书院赴云南昆明和西双版纳支队成立于2025年。我们的目标是通过实地调研，建立区域植物数据库。</p>
-                <p>在为期8天的野外考察中，我们深入自然保护区，记录了大量珍贵的一手数据。</p>
+                <p>清华大学秀钟书院“可持续·未来”赴云南昆明和西双版纳实践支队，由一位书院老师与14名秀钟四、五字班本科生组成，于2026年1月17日至25日赴云南省昆明市与西双版纳傣族自治州开展实地调研。“多民族传统生态智慧赋能植物多样性研究与绿色数智化转型”为主题立足全球生物多样性热点区域，贯通高原湖泊、湿地与热带雨林生态系统，深入多民族聚居区。
+                </p>
+                <p>在为期8天的野外考察中，我们深入昆明与西双版纳的植物园，记录了大量珍贵的一手数据。</p>
 
                 <!-- 数据统计小组件 -->
                 <div class="stats-grid">
@@ -364,146 +367,922 @@
 
         <!-- 搜索/过滤功能 -->
         <div class="search-bar">
-            <input type="text" id="searchInput" onkeyup="filterPlants()" placeholder="搜索植物名称或科名...">
+            <input type="text" id="searchInput" onkeyup="filterPlants()" placeholder="搜索植物名称...">
         </div>
 
         <div class="plant-grid" id="plantGrid">
 
-            <!-- 模板卡片 1 -->
-            <div class="plant-card">
-                <!-- 占位图：替换为植物图片 -->
-                <img src="images/plant_1.webp" loading="lazy" class="plant-img" alt="植物图片">
+            <!-- 模板卡片  -->
+            <div class="plant-card"> <img src="images/plant_1.webp" loading="lazy" class="plant-img" alt="植物图片">
                 <div class="plant-info">
-                    <div class="plant-name">银杏</div>
-                    <div class="plant-scientific">Ginkgo biloba</div>
+                    <div class="plant-name">葫芦茶</div>
+                    <div class="plant-scientific">Tadehagi triquetrum</div>
                     <div style="margin-bottom: 8px;">
-                        <span class="tag">银杏科</span>
-                        <span class="tag">濒危</span>
+                        <span class="tag">豆科</span>
+                        <span class="tag">药用</span>
                     </div>
                     <div class="location-info">
-                        📍 分布范围：海拔500-1000m阔叶林中
-                    </div>
-                </div>
-            </div>
-
-            <!-- 模板卡片 2 -->
-            <div class="plant-card">
-                <img src="https://images.unsplash.com/photo-1524197825391-7f8e8748375e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                    class="plant-img" alt="植物图片">
-                <div class="plant-info">
-                    <div class="plant-name">珙桐</div>
-                    <div class="plant-scientific">Davidia involucrata</div>
-                    <div style="margin-bottom: 8px;">
-                        <span class="tag">蓝果树科</span>
-                        <span class="tag">一级保护</span>
-                    </div>
-                    <div class="location-info">
-                        📍 分布范围：深山溪谷两旁
-                    </div>
-                </div>
-            </div>
-
-            <!-- 模板卡片 3 -->
-            <div class="plant-card">
-                <img src="https://images.unsplash.com/photo-1597843786271-105124152442?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                    class="plant-img" alt="植物图片">
-                <div class="plant-info">
-                    <div class="plant-name">红豆杉</div>
-                    <div class="plant-scientific">Taxus wallichiana</div>
-                    <div style="margin-bottom: 8px;">
-                        <span class="tag">红豆杉科</span>
-                        <span class="tag">药用价值</span>
-                    </div>
-                    <div class="location-info">
-                        📍 分布范围：高山阴坡
-                    </div>
-                </div>
-            </div>
-
-            <!-- 你可以复制上面的 div class="plant-card"... 继续添加更多植物 -->
-            <div class="plant-card">
-                <!-- 占位图：替换为植物图片 -->
-                <img src="images/plant_1.webp" loading="lazy" class="plant-img" alt="植物图片">
-                <div class="plant-info">
-                    <div class="plant-name">银杏</div>
-                    <div class="plant-scientific">Ginkgo biloba</div>
-                    <div style="margin-bottom: 8px;">
-                        <span class="tag">银杏科</span>
-                        <span class="tag">濒危</span>
-                    </div>
-                    <div class="location-info">
-                        📍 分布范围：海拔500-1000m阔叶林中
+                        📍 分布：印度、斯里兰卡、缅甸、泰国、越南、老挝、柬埔寨、马来西亚、中国（福建、江西、广东、海南、广西、贵州、云南）及太平洋群岛等地
                     </div>
                     <div class="value-info">
-                        功效：哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇1111哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇
+                        🌿 价值：全株供药用，能清热解毒、健脾消食和利尿，是常用民间草药。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_2.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">灵枝草</div>
+                    <div class="plant-scientific">Rhinacanthus nasutus</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">爵床科</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：热带非洲、马达加斯加、印度、马来西亚、中南半岛；中国云南野生，海南有栽培
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：根、叶含萘醌类化合物，民间煎剂治疗湿疹、体癣等皮肤病；也可作观赏植物。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_3.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">竹叶兰</div>
+                    <div class="plant-scientific">Arundina graminifolia</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">兰科</span>
+                        <span class="tag">二级保护植物</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍分布：中国（浙江、江西、福建、台湾、湖南、广东、海南、广西、四川、贵州、云南、西藏）、尼泊尔、锡金、不丹、印度、斯里兰卡、缅甸、越南、老挝、柬埔寨、泰国、马来西亚、印度尼西亚、琉球群岛和塔希提岛。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：具有较高的园艺观赏价值；亦具药用价值，根状茎用于治疗药物中毒，全草治肝炎，跌打损伤，风湿疼痛，膀胱炎，毒蛇咬伤。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_4.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">香露兜</div>
+                    <div class="plant-scientific">Pandanus amaryllifolius</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">露兜树科</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产地可能为印度尼西亚马鲁古群岛；中国海南有栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：叶片散发粽香，可作为食品调味料（如斑兰叶）；挥发油含角鲨烯等活性成分，具有保健作用，可用于食品、日化等领域。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_5.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">紫背万年青</div>
+                    <div class="plant-scientific">Tradescantia spathacea</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">鸭跖草科</span>
+                        <span class="tag">观赏</span> <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于墨西哥和西印度群岛，现在中国广泛栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：株形独特，叶面绿背紫，是优美的盆栽观叶植物；花序可入药，有清肺化痰、凉血止血之效。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_6.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">麦冬</div>
+                    <div class="plant-scientific">Ophiopogon japonicus</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">天门冬科</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：主产浙江、四川；生于山坡林下或溪旁。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：块根入药，具有养阴润肺、益胃生津、清心除烦的功效，用于肺燥干咳、阴虚劳嗽、津伤口渴等症。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_7.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">樟叶木防己</div>
+                    <div class="plant-scientific">Cocculus laurifolius</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">防己科</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：中国南部各省区，北至湖南西南部、贵州南部和西藏吉隆；亚洲南部、东南部和东部也有分布。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：根和全株入药，有顺气宽胸、祛风止痛等功效，用于脘腹疼痛、胸膈痞胀、风湿腰腿痛、跌打肿痛等病症。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_8.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">亮叶山小橘</div>
+                    <div class="plant-scientific">Glycosmis lucida</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">芸香科</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：云南西双版纳及以西各地（景洪、勐腊、景东、澜沧等地）；印度及缅甸东北部也有。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：根、叶和果实入药，能祛痰止咳、理气消积、散瘀消肿，用于感冒咳嗽、消化不良、跌打淤血肿痛等。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_9.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">蝉翼藤</div>
+                    <div class="plant-scientific">Securidaca inappendiculata</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">远志科</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：广东、海南、广西、云南；印度、缅甸、越南、印度尼西亚和马来西亚也有分布。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：茎皮纤维可作麻类代用品；根及根皮入药，能活血散瘀、消肿止痛、清热利尿，用于跌打损伤、风湿病、骨折等。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_10.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">木蝴蝶</div>
+                    <div class="plant-scientific">Oroxylum indicum</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">紫葳科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：中国（福建、台湾、广东、广西、四川、贵州、云南）、越南、老挝、泰国、柬埔寨、缅甸、印度、马来西亚、菲律宾、印度尼西亚等地。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：种子和树皮入药，能清肺利咽、舒肝和胃；花朵艳丽，种子形似蝴蝶，可作为园林观赏植物。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_11.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">蝴蝶果</div>
+                    <div class="plant-scientific">Cleidiocarpon cavaleriei</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">大戟科</span>
+                        <span class="tag">三级保护植物</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：中国云南、广西等省区；国外越南北部也有分布。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：树形美观，可作行道树或庭园绿化；木材适做家具；种子富含淀粉和油，经去毒处理后可食用。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_12.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">箭毒羊角拗</div>
+                    <div class="plant-scientific">Strophanthus hispidus</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">夹竹桃科</span>
+                        <span class="tag">有毒</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产非洲南部；中国云南、广东、广西等地有人工引种栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：全株含强心苷类毒素，种子毒性最强；传统用于制作箭毒和强心药物，但因治疗安全范围窄，使用需极度谨慎。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_13.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">黑面神</div>
+                    <div class="plant-scientific">Breynia fruticosa</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">叶下珠科</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：分布于中国、越南、老挝、泰国；在中国分布于浙江、福建、广东、海南、广西、四川、贵州、云南等省区，散生于山坡、平地旷野灌木丛中或林缘。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：叶及根入药，性寒味甘，具散疮消毒、清热解毒之效，外敷治湿疹、皮炎，内服治肠胃炎、咽喉炎等。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_14.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">肉桂</div>
+                    <div class="plant-scientific">Cinnamomum cassia</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">樟科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">食用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于中国，在热带及亚热带地区广为栽培，广西栽培较多；印度、老挝、越南至印度尼西亚等地也有分布。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：树皮（肉桂）具温中补肾、散寒止痛的功效；亦为重要香料，用于烘焙、腌制食品；可提制桂油用于化妆品、香烟等。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_15.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">魔芋</div>
+                    <div class="plant-scientific">Amorphophallus konjac</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">天南星科</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：东喜马拉雅山区至泰国、越南、菲律宾、日本和中国；中国自陕西、甘肃、宁夏至江南各省均有分布。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：块茎可加工成魔芋豆腐供食用；入药能解毒消肿、健胃消胀；全株有毒，需经加工后使用。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_16.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">假鹊肾树</div>
+                    <div class="plant-scientific">Pseudostreblus indicus</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">桑科</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：中国广东、海南、广西（南部）、云南（南部）；印度东北部、泰国北部也有分布。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：树皮入药，能消炎止血、镇痛祛瘀，治消化道出血、胃痛、外伤出血、跌打、风湿痛等。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_17.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">假蒟</div>
+                    <div class="plant-scientific">Piper sarmentosum</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">胡椒科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">食用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：中国福建、广东、广西、云南、贵州及西藏；印度、越南、马来西亚、菲律宾、印度尼西亚、巴布亚新几内亚也有分布。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：全草入药，能祛风散寒、行气止痛、活络消肿；嫩茎叶可作蔬菜，用于炒食、做汤等。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_18.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">红球姜</div>
+                    <div class="plant-scientific">Zingiber zerumbet</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">姜科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于马来西亚；现产于中国广东、广西、云南等省区，亚洲热带地区广布。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：根茎能祛风解毒，治肚痛、腹泻；嫩茎叶可作蔬菜；花序球果状、后期变红，具观赏价值；还可提取芳香油。
+                    </div>
+                </div>
+            </div>
+            <div class="plant-card"> <img src="images/plant_19.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">金毛狗脊</div>
+                    <div class="plant-scientific">Cibotium barometz</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">蚌壳蕨科</span>
+                        <span class="tag">二级保护植物</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：中国云南（昭通等地）海拔800米以下的山箐林下。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：根状茎外被金黄色茸毛，是良好的止血药；具补肝肾、利尿等功效，用于筋骨不健等症。
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="plant-card">
+                <img src="images/plant_20.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">朱砂根</div>
+                    <div class="plant-scientific">Ardisia crenata</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">紫金牛科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：主要分布于中国长江流域以南的浙江、安徽、江西、湖南、湖北、四川、福建、广东、广西等地。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：其根部可入药，具有清热解毒、活血止痛的功效，常用于治疗咽喉肿痛、风湿痹痛、跌打损伤。同时，因其植株形态美观，果实鲜红，也常作为园林观赏植物栽培。
                     </div>
                 </div>
             </div>
 
             <div class="plant-card">
-                <!-- 占位图：替换为植物图片 -->
-                <img src="images/plant_1.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <img src="images/plant_21.webp" loading="lazy" class="plant-img" alt="植物图片">
                 <div class="plant-info">
-                    <div class="plant-name">银杏</div>
-                    <div class="plant-scientific">Ginkgo biloba</div>
+                    <div class="plant-name">龙血树</div>
+                    <div class="plant-scientific">Dracaena draco</div>
                     <div style="margin-bottom: 8px;">
-                        <span class="tag">银杏科</span>
-                        <span class="tag">濒危</span>
+                        <span class="tag">天门冬科</span>
+                        <span class="tag">二级保护植物</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
                     </div>
                     <div class="location-info">
-                        📍 分布范围：海拔500-1000m阔叶林中
+                        📍 分布：原产于非洲热带、亚热带及西班牙加那利群岛等地。在中国华南地区有引种栽培，野生资源分布于云南、广西、海南等地。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：其树脂可提取名贵中药“血竭”，用于散瘀止血、止咳平喘。树形优美，常作为大型庭院观赏植物或室内盆栽。
                     </div>
                 </div>
             </div>
 
             <div class="plant-card">
-                <!-- 占位图：替换为植物图片 -->
-                <img src="images/plant_1.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <img src="images/plant_22.webp" loading="lazy" class="plant-img" alt="铁力木图片">
                 <div class="plant-info">
-                    <div class="plant-name">银杏</div>
-                    <div class="plant-scientific">Ginkgo biloba</div>
+                    <div class="plant-name">铁力木</div>
+                    <div class="plant-scientific">Mesua ferrea</div>
                     <div style="margin-bottom: 8px;">
-                        <span class="tag">银杏科</span>
-                        <span class="tag">濒危</span>
+                        <span class="tag">藤黄科</span>
+                        <span class="tag">二级保护植物</span>
+                        <span class="tag">珍贵用材</span>
+                        <span class="tag">油料</span>
                     </div>
                     <div class="location-info">
-                        📍 分布范围：海拔500-1000m阔叶林中
+                        📍 分布：原产亚洲热带地区。在中国是云南西南部和广西西南部特有的珍贵树种。
+                    </div>
+                    <div class="value-info">
+                        🌿
+                        价值：是我国已知最硬重的木材，气干密度大于水，纹理致密，耐腐防蛀，是用于高级建筑、特种雕刻、乐器的顶级用材。种子含油量高达74%，是优良的木本油料树种。树形美观，花大芳香，也具有很高的观赏价值。
                     </div>
                 </div>
             </div>
 
             <div class="plant-card">
-                <!-- 占位图：替换为植物图片 -->
-                <img src="images/plant_1.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <img src="images/plant_23.webp" loading="lazy" class="plant-img" alt="植物图片">
                 <div class="plant-info">
-                    <div class="plant-name">银杏</div>
-                    <div class="plant-scientific">Ginkgo biloba</div>
+                    <div class="plant-name">鸡蛋花</div>
+                    <div class="plant-scientific">Plumeria rubra</div>
                     <div style="margin-bottom: 8px;">
-                        <span class="tag">银杏科</span>
-                        <span class="tag">濒危</span>
+                        <span class="tag">夹竹桃科</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
                     </div>
                     <div class="location-info">
-                        📍 分布范围：海拔500-1000m阔叶林中
+                        📍 分布：原产美洲热带，在中国福建、广东、广西、海南及云南等地常见栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：花朵晒干可泡茶饮用，是广东凉茶“五花茶”的原料之一，气味芳香。干燥花可入药，具清热解暑、清肠止泻、止咳化痰的功效。同时，因其树冠美观、花色素雅，也广泛作为观赏植物栽培。
                     </div>
                 </div>
             </div>
 
             <div class="plant-card">
-                <!-- 占位图：替换为植物图片 -->
-                <img src="images/plant_1.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <img src="images/plant_24.webp" loading="lazy" class="plant-img" alt="植物图片">
                 <div class="plant-info">
-                    <div class="plant-name">银杏</div>
-                    <div class="plant-scientific">Ginkgo biloba</div>
+                    <div class="plant-name">扇叶露兜树</div>
+                    <div class="plant-scientific">Pandanus utilis</div>
                     <div style="margin-bottom: 8px;">
-                        <span class="tag">银杏科</span>
-                        <span class="tag">濒危</span>
+                        <span class="tag">露兜树科</span>
+                        <span class="tag">观赏</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">药用</span>
                     </div>
                     <div class="location-info">
-                        📍 分布范围：海拔500-1000m阔叶林中
+                        📍 分布：原产于非洲马达加斯加。在中国福建、广东、广西、海南、香港和台湾等地有栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：树形奇特，叶缘带刺，是优良的海滨绿化、观赏树种。其果肉可鲜食或加工，叶片可用于编织。花和植株在民间也有一定的药用价值。
                     </div>
                 </div>
             </div>
 
+            <div class="plant-card">
+                <img src="images/plant_25.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">吉祥草</div>
+                    <div class="plant-scientific">Reineckea carnea</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">百合科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：分布于中国长江流域以南及陕西、河南等地，日本也有分布。常生于阴湿山坡或林下，也多栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：全草入药，具有清肺止咳、凉血止血、解毒利咽等功效。同时，作为多年生常绿草本，它适应半阴环境，叶色翠绿，也常被栽培作观赏地被植物。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_26.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">假鹰爪</div>
+                    <div class="plant-scientific">Desmos chinensis</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">番荔枝科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：分布于中国广东、广西、云南、贵州等地，印度、越南及马来西亚等亚洲热带地区也有分布。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：根、叶供药用，能祛风利湿、健脾和胃、化瘀止痛。花朵香味浓郁，可提取芳香油，也是理想的观赏花卉。其茎皮纤维可用于制绳。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_27.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">大野芋</div>
+                    <div class="plant-scientific">Leucocasia gigantea</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">天南星科</span>
+                        <span class="tag">近危</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于亚洲，在中国广西、云南、广东、湖南等南方省份有分布，也见于东南亚各国。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：栽培种的叶柄可供食用；根茎可用于药用，治疗跌打损伤等。植株高大，叶大如伞，常用于营造热带园林景观。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_28.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">海滨木巴戟</div>
+                    <div class="plant-scientific">Morinda citrifolia</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">茜草科</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：分布于中国台湾、海南及西沙群岛等地，广泛分布于亚洲热带至太平洋岛屿。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：其果实（又名诺丽果）可食用或加工成保健饮料；在民间具有悠久的药用历史。树形通直优雅，常作庭园观赏树。根、茎还可提取染料。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_29.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">四数木</div>
+                    <div class="plant-scientific">Tetrameles nudiflora</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">四数木科</span>
+                        <span class="tag">二级保护植物</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：主要分布于中国云南南部（景洪、勐腊等地），亦见于印度、缅甸、越南等东南亚地区，常生长在石灰岩山地的热带雨林中。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：世界上最典型、国内最大的板根植物，在热带雨林生态研究方面有重要价值。其木材材质较次，多用于临时建筑、轻型板材；巨大的板根在民间曾被用作车轮。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_30.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">云南石梓</div>
+                    <div class="plant-scientific">Gmelina arborea</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">唇形科</span>
+                        <span class="tag">易危</span>
+                        <span class="tag">材用</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：分布于中国云南、广东、广西等地，在印度、缅甸、泰国等南亚至东南亚地区也有分布。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：珍贵速生用材树种，木材性质近似柚木，用于高级家具、造船等。其花可提取天然色素和香料，是傣族传统食品“毫诺索”的原料。树皮和叶可入药，具有除风止痒、清火解毒等功效。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_31.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">檀香</div>
+                    <div class="plant-scientific">Santalum album</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">檀香科</span>
+                        <span class="tag">易危</span>
+                        <span class="tag">经济植物</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于印度、印度尼西亚等热带地区。在中国广东、广西、海南、云南、福建等地有引种栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：名贵的香料和药用植物。其树干心材（檀香木）可提取被誉为“液体黄金”的檀香油，也可用于雕刻和制作工艺品。檀香作为中药材，具有行气温中、开胃止痛的功效。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_32.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">马钱子</div>
+                    <div class="plant-scientific">Strychnos nux-vomica</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">马钱科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">大毒</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于印度、越南、缅甸等热带地区。在中国福建、广东、广西、云南等地有栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：成熟种子为重要中药材，具有通络止痛、散结消肿的功效，常用于治疗风湿顽痹、麻木瘫痪、跌打损伤。该药有大毒，必须经专业炮制减毒后，在医生指导下严格按剂量使用，孕妇禁用。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_33.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">贝叶棕</div>
+                    <div class="plant-scientific">Corypha umbraculifera</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">棕榈科</span>
+                        <span class="tag">文化植物</span>
+                        <span class="tag">观赏</span>
+                        <span class="tag">食用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于印度、斯里兰卡等亚洲热带地区。在中国云南西双版纳地区有引种栽培，多见于佛寺和植物园内。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：树形高大美观，是优良的绿化观赏植物。其叶片在历史上被加工成“贝叶”，用于刻写佛教经文，形成东南亚独特的“贝叶经”文化。此外，花序汁液可制糖或酿酒，树干髓心可提取淀粉。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_34.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">黄脉葵</div>
+                    <div class="plant-scientific">Latania verschaffeltii</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">棕榈科</span>
+                        <span class="tag">濒危</span>
+                        <span class="tag">观赏</span>
+                        <span class="tag">材用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于非洲毛里求斯的罗德里格斯岛。在中国华南地区有引种栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：珍稀的观赏棕榈，幼株叶脉与叶柄呈鲜明的黄色，株形优雅，常用于园林景观。其木材坚硬，带黑色斑纹，传统上用于建筑。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_35.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">胖大海</div>
+                    <div class="plant-scientific">Sterculia lychnophora</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">梧桐科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">小毒</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：生于热带地区。主产于泰国、越南、柬埔寨等国。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：以干燥成熟种子入药，是一种常用的清热化痰药，具有清热润肺、利咽开音、润肠通便的功效，主治肺热声哑、咽喉干痛、热结便秘等症。药性寒凉，有小毒，不宜长期过量服用。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_36.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">红椿蕨</div>
+                    <div class="plant-scientific">Neoblechnum brasiliense</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">乌毛蕨科</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于巴西东南部，世界各地有栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：叶色翠绿，形态优美，常盆栽观赏，或用于花境搭配、庭院观赏。因其植株呈伞形，四季常青，也常用于室内绿化装饰，营造生机盎然的景象。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_37.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">巢蕨</div>
+                    <div class="plant-scientific">Asplenium nidus</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">铁角蕨科</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：分布于中国海南、云南、台湾、广东、广西等地；也广布于热带亚洲其他地区。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：嫩叶可作为野菜食用，富含维生素等营养物质。全草或根茎可强筋壮骨、活血祛瘀，用于治疗跌打损伤、骨折等。叶片碧绿光亮，形态优美，是常见的观叶植物，常用于室内盆栽或热带园林景观。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_38.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">紫檀</div>
+                    <div class="plant-scientific">Pterocarpus indicus</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">豆科</span>
+                        <span class="tag">二级保护植物</span>
+                        <span class="tag">濒危</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">材用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：产中国台湾、广东和云南（南部）；印度、菲律宾、印度尼西亚和缅甸等地也有分布。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：坚硬致密，心材红色，为优良的建筑、乐器及家具用材。其树脂和木材可药用；心材有助于治疗肾结石、胃病等，树液提取物有收敛止血作用。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_39.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">狗牙花</div>
+                    <div class="plant-scientific">Tabernaemontana divaricata</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">夹竹桃科</span>
+                        <span class="tag">濒危</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于印度及中国云南，在广西、广东、台湾及亚洲热带和亚热带等地区广泛栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：其枝叶茂密，花朵洁白素雅，花期长，是常见的园林绿化和盆栽植物。其根、叶入药，有清热降压、解毒消肿的功效，可用于治疗咽喉肿痛、跌打损伤和痈疽疮毒。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_40.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">肾茶</div>
+                    <div class="plant-scientific">Orthosiphon aristatus</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">唇形科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：分布于中国广东、海南、广西、云南、台湾及福建；自印度、缅甸至印度尼西亚、菲律宾及澳大利亚等地也有分布。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：其地上部分入药，性甘、微苦、凉。传统上主要用于清热、利尿、排石，主治急慢性肾炎、膀胱炎、尿路结石及风湿性关节炎。因其花丝细长，形似猫须，叶色翠绿，也常被用于园林花坛观赏。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_41.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">雄黄兰</div>
+                    <div class="plant-scientific">Crocosmia crocosmiflora</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">鸢尾科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产非洲南部，现我国各地广泛栽培，在南方常为露地栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：其花色鲜艳，有红、橙、黄等色，花期为仲夏，是布置花境、花坛和作切花的优良材料。其干燥球茎可入药，具有解毒、消肿、止痛的功效，常用于治疗脘痛、筋骨疼痛、痄腮、疮疡及跌打损伤。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_42.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">开口箭</div>
+                    <div class="plant-scientific">Tupistra chinensis</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">百合科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">有毒</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：分布于中国陕西、甘肃、湖北、四川、云南、贵州、广西、广东、湖南、江西、福建、台湾、浙江、安徽等地。
+                    </div>
+                    <div class="value-info">
+                        🌿
+                        价值：根状茎可入药，具有清热解毒、祛风除湿、散瘀止痛的功效，常用于治疗白喉、咽喉肿痛、风湿痹痛、跌打损伤、胃痛及痈肿疮毒等。现代研究表明其提取物具有一定的抗肿瘤活性。本品有毒，内服用量不宜过大。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_43.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">西印度醋栗</div>
+                    <div class="plant-scientific">Phyllanthus acidus</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">叶下珠科</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于马达加斯加，在中国台湾、海南有分布，在东南亚、印度等热带及亚热带地区也有栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：果实极酸，常加工成果酱、果汁、蜜饯或作为菜肴的调味料。树皮、根、叶可入药，用于缓解咳嗽、风湿腰痛等症状。植株果实繁密，也可用于庭院观赏。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_44.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">细叶雪茄花</div>
+                    <div class="plant-scientific">Cuphea hyssopifolia</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">千屈菜科</span>
+                        <span class="tag">观赏</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于墨西哥至中美洲，现热带地区广为栽培。在中国广东、广西、云南、福建等省区已引种。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：植株矮小，分枝繁密，四季常绿，花期极长，几乎全年开花。花小而多，盛开时犹如繁星点缀，常用于布置花坛、花境边缘，作绿篱或盆栽观赏，绿化与观赏价值高。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_45.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">红花鸡蛋花</div>
+                    <div class="plant-scientific">Plumeria rubra</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">夹竹桃科</span>
+                        <span class="tag">观赏</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">食用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产南美洲墨西哥至委内瑞拉一带，现已遍布全世界热带及亚热带地区。中国华南、西南地区有栽培，长江流域及其以北地区常温室栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿 价值：树形优美，花期长（5-11月），花色红艳，芳香浓郁，是热带、亚热带地区著名的庭园观赏植物。花朵可提制香料、晒干制饮料，也可炒食或油炸。其花和茎皮有清热、利湿、解暑等功效。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_46.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">鸢尾</div>
+                    <div class="plant-scientific">Iris tectorum</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">鸢尾科</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">观赏</span>
+                        <span class="tag">生态</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于中国，主要分布在中国华东、华中、西南和西北各省（自治区、直辖市），如山西、陕西、甘肃、江苏、浙江、福建、湖北、四川、云南等地。
+                    </div>
+                    <div class="value-info">
+                        🌿
+                        价值：根状茎可入药，具有活血祛瘀、祛风利湿、消炎等功效，可用于治疗关节炎、跌打损伤等症。是重要的观赏花卉，花大而奇，宛若彩蝶，常用于庭园、花坛、盆栽或作切花。对氟化物敏感，可用于监测环境污染。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_47.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">菠萝蜜</div>
+                    <div class="plant-scientific">Artocarpus heterophyllus</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">桑科</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">药用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于印度，在热带潮湿地区广泛栽培。中国福建、台湾、广东、广西、海南和云南南部等地均有引种栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿
+                        价值：著名热带食用果树，果实巨大，果肉鲜食或加工成果汁、果脯等；种子富含淀粉，可煮食。树液和叶可药用，消肿解毒；果肉有止渴、通乳、补中益气的功效。木材金黄坚硬，可制作家具或作染料；树形整齐，也常作庭荫树和行道树。
+                    </div>
+                </div>
+            </div>
+
+            <div class="plant-card">
+                <img src="images/plant_48.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">油梨</div>
+                    <div class="plant-scientific">Persea americana</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">樟科</span>
+                        <span class="tag">食用</span>
+                        <span class="tag">药用</span>
+                        <span class="tag">经济植物</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于美洲的墨西哥至哥伦比亚和西印度群岛。现已遍布全世界热带及亚热带地区。我国广东、海南、福建、台湾、云南及四川等地有少量栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿
+                        价值：著名热带水果，又名牛油果。果肉含脂肪、蛋白质和多种维生素，口感独特，常鲜食或制成果酱、色拉、饮品。果仁含脂肪油，可供食用、医药和化妆品工业用。叶和皮可助消化、治咳嗽。被视为经济价值高的木本油料树种。
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="plant-card">
+                <img src="images/plant_49.webp" loading="lazy" class="plant-img" alt="植物图片">
+                <div class="plant-info">
+                    <div class="plant-name">西非牡蛎瓜</div>
+                    <div class="plant-scientific">Telfairia occidentalis</div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="tag">葫芦科</span>
+                        <span class="tag">食用</span>
+                    </div>
+                    <div class="location-info">
+                        📍 分布：原产于非洲的尼日利亚。目前已在我国海南、云南（西双版纳）等地成功引种栽培。
+                    </div>
+                    <div class="value-info">
+                        🌿
+                        价值：一种新奇且营养价值高的热带水果。种子是其主要的食用部分，蛋白质含量超25%，油脂含量超50%，营养丰富，可煮熟、发酵或磨粉食用。嫩芽和嫩叶亦可作为蔬菜食用。此外，它也被列为具有开发潜力的油料作物。
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- 新增：加载更多按钮 -->
         <div style="text-align: center; margin-top: 30px;">
@@ -514,7 +1293,7 @@
     <!-- 联系/页脚 -->
     <footer id="contact">
         <h3>加入保护生物多样性的行列</h3>
-        <p>联系邮箱: contact@bioguard-team.com</p>
+        <p>微信公众号：秀钟笔记-云野仙踪</p>
         <p>&copy; 2026 “可持续·未来”秀钟书院赴云南昆明和西双版纳支队 版权所有</p>
     </footer>
 
